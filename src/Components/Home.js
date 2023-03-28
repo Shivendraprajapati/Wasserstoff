@@ -5,9 +5,11 @@ import WorldMap from "./WorldMap";
 
 const Home = () => {
   return (
-    <div>
-      <Sidebar />
-      <WorldMap />
+    <div className="content-wrapper">
+      <div className="container-wrapper">
+        <Sidebar />
+        <WorldMap />
+      </div>
       <Barchart />
     </div>
   );

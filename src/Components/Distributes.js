@@ -4,7 +4,7 @@ const Distributes = (props) => {
   return (
     <div className="div2">
       <div className="totalearnicon" style={{ backgroundColor: `${props.bg}` }}>
-        <div>{props.icon}</div>
+        <span className="totalicon">{props.icon}</span>
       </div>
       <div className="total-earn">
         <p className="heading">{props.title}</p>

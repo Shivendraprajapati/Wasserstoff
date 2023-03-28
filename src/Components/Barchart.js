@@ -14,9 +14,11 @@ const Barchart = () => {
   return (
     <div className="barchart">
       <div className="sales-figer">
-        <h3 style={{ color: "#383874", fontWeight: "600" }}>
-          <span style={{ fontSize: "14px" }}>Sales Figer</span> <br />{" "}
-          <span>$10,430</span>
+        <h3 style={{ color: "#383874", fontWeight: "600", fontSize: "16px" }}>
+          <span style={{ fontSize: "12px", fontWeight: "400" }}>
+            Sales Figer
+          </span>{" "}
+          <br /> <span>$10,430</span>
         </h3>
       </div>
       <div className="graph" style={{ display: "flex" }}>

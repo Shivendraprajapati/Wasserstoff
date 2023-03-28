@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow: hidden;
 }
 
 .App {
@@ -28,12 +33,12 @@
   .logo-name {
     height: auto;
     display: flex;
-    
+    align-items: center;
     p {
       font-family: Archivo;
       font-size: 21px;
       font-weight: 400;
-      padding-left: 3px;
+      padding-left: 10px;
       line-height: 22px;
     }
   }
@@ -48,22 +53,32 @@
       height: 32px;
       background-color: #eef0fa;
       border-radius: 8px;
-
+      position: relative;
       #search {
-        width: 90%;
-        height: 100%;
+        width: 100%;
+        height: 32px;
         background: transparent;
         border: none;
         outline: none;
+        padding: 2px 35px 2px 15px;
+      }
+      .search-icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        i {
+          color: #a1a3d4;
+        }
       }
     }
 
     .navlist {
       display: flex;
       width: 55%;
-      display: flex;
+      align-items: center;
       justify-content: space-between;
-
       li {
         list-style: none;
 
@@ -85,7 +100,7 @@
     width: 80px;
     display: flex;
     justify-content: space-around;
-
+    align-items: center;
     span i {
       height: 21px;
       width: 16px;
@@ -93,40 +108,37 @@
     }
   }
 }
-
-.dashboard {
-  height: 84vh;
+.content-wrapper {
+  overflow-y: auto;
   width: 100%;
+  height: calc(100% - 96px);
+  background-color: #e2e4f0;
+}
+.container-wrapper {
+  width: 100%;
+  height: 100%;
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30px;
 }
-
-// worldmap style
 .worldmap {
-  height: 84vh;
   width: 100%;
-  background: #e2e4f0;
-  padding-left: 15%;
+  height: 100%;
+  padding: 20px;
 }
-
 .sidebar {
-  position: absolute;
-  top: 4rem;
-  min-height: 80vh;
   width: 35%;
-  padding-left: 4%;
-
   .div1 {
     color: #383874;
-
     .users {
-      font-family: Poppins;
+      font-family: "Poppins", sans-serif;
       font-size: 20px;
       font-weight: 600;
       line-height: 32px;
       letter-spacing: 0.15px;
-
       span {
-        font-family: Roboto;
+        font-family: "Roboto";
         padding-left: 1rem;
         font-size: 10px;
         font-weight: 700;
@@ -134,10 +146,9 @@
         letter-spacing: 1.5px;
       }
     }
-
     .total {
       font-family: Poppins;
-      font-size: 52px;
+      font-size: 40px;
       font-weight: 500;
       letter-spacing: -1.75px;
     }
@@ -158,24 +169,29 @@
         width: 50px;
         border-radius: 15px;
         display: flex;
+        line-height: 1;
         // background-color: cyan;
         justify-content: center;
         align-items: center;
+        .totalicon {
+          width: 26px;
+          height: 26px;
+        }
       }
 
       .total-earn {
         font-size: 18px;
         line-height: 32px;
         padding-left: 1rem;
-
+        font-family: "Poppins";
+        font-weight: 400;
+        line-height: 1;
+        font-size: 16px;
         .heading {
-          font-family: Roboto;
-          font-weight: 400;
+          margin-bottom: 8px;
           letter-spacing: 0.43px;
         }
-
         .count {
-          font-family: Poppins;
           font-weight: 600;
           letter-spacing: 0.15px;
         }
@@ -184,15 +200,26 @@
   }
 
   .percentage-circle {
-    height: 12vh;
-    width: 400px;
     display: flex;
-
+    .percentage-count {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1;
+      white-space: nowrap;
+      letter-spacing: 0.44px;
+      color: #383874;
+      display: inline-flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+      margin: 0 25px 0 15px;
+    }
     .active {
       width: 50%;
       height: 100%;
       display: flex;
-
+      align-items: center;
       .active-users {
         height: 59px;
         width: 59px;
@@ -214,7 +241,6 @@
     }
   }
 }
-
 // barchart
 .barchart {
   height: 53px !important;
@@ -222,18 +248,15 @@
   display: flex;
   background: #ffff;
   position: absolute;
-  bottom: 3rem;
+  bottom: 3.2rem;
   left: 10%;
   border-radius: 10px;
-
   .sales-figer {
     width: 15%;
     text-align: center;
   }
-
   .graph {
     position: relative;
-
     .underline {
       position: absolute;
       bottom: 4px;
@@ -244,40 +267,36 @@
   }
 }
 .designfaster {
-  width: 30vw;
   height: auto;
   text-align: center;
-
+  font-family: "Poppins", sans-serif;
   .headingDesign {
-    font-family: "poppins";
+    font-family: "Poppins", sans-serif;
     letter-spacing: -0.44px;
     text-align: left;
     font-weight: 400;
     font-size: 24px;
   }
-
   .circle-earning {
-    width: 75%;
-    margin: 0.5rem auto;
+    margin: 1.5rem 0;
     padding: 0.5rem;
     height: 40vh;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px solid lightgray;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+    background-color: #fff;
+    font-family: "Poppins";
     .circles {
       height: 86px;
       width: 86px;
       border-radius: 50%;
       background: lightgray;
       margin: auto;
-
       .innercircle {
         height: 78px;
         width: 78px;
         background: #ffff;
         border-radius: 50%;
-
         .innermostcircle {
           height: 49px;
           width: 49px;
@@ -286,16 +305,14 @@
         }
       }
     }
-
     p {
-      font-family: "roboto";
+      font-family: "Poppins";
       color: #383874;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       align-items: center;
     }
-
     .updown {
       font-family: "Poppins";
       font-style: normal;
@@ -303,20 +320,16 @@
       font-size: 15px;
       line-height: 25px;
     }
-
     .compare {
-      font-family: "Roboto";
+      font-family: "Poppins";
       font-size: 12px;
       line-height: 16px;
       color: #383874;
     }
   }
-
   .types {
     height: auto;
-    width: 20vw;
-    margin: 0.5rem auto;
-
+    margin: 0.5rem 0;
     div {
       width: 100%;
       display: flex;
@@ -327,12 +340,9 @@
   }
 
   .bg-blue {
-    height: 19vh;
-    border-radius: 15px;
-    width: 75%;
-    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
     background: #8676ff;
-
     div {
       height: 50%;
       padding: 0.3rem;
@@ -340,11 +350,31 @@
   }
 
   .acc-data {
-    width: 75%;
-    border-radius: 15px;
-    padding: 0.3rem;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-size: 0.5rem;
+    margin: 1.5rem 0;
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    span {
+      padding: 0 10px;
+    }
+    .acc-count {
+      color: #9292c1;
+    }
+    .arrow-up {
+      color: #00b929;
+    }
+    .arrow-down {
+      color: #ff2d2e;
+    }
+    .name {
+      width: 120px;
+    }
   }
 }
 
@@ -529,6 +559,7 @@
   align-items: center;
   padding: 0 1.5rem;
   color: #5a5a89;
+  background-color: #fff;
   position: fixed;
   bottom: 0;
   font-family: Roboto;

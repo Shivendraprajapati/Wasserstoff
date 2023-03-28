@@ -13,10 +13,11 @@ const ActiveNewUser = (props) => {
           {props.percentage}
         </div>
       </div>
-      <p style={{ paddingLeft: "1rem", color: "#383874", fontWeight: "400" }}>
+      <p className="percentage-count">
         <span>{props.title}</span>
-        <br />
-        <span>{props.user}</span>
+        <span style={{ color: "#383874", fontWeight: "300" }}>
+          {props.user}
+        </span>
       </p>
     </div>
   );

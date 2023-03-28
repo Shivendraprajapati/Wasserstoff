@@ -96,14 +96,28 @@ const DesignFaster = () => {
 
       <div className="types acc-data">
         <div>
-          Travale <span>852</span>
-          2540
+          <span className="name">Travale</span>{" "}
+          <span className="acc-count">852</span>
+          <span>2540</span>
+          <span className="arrow-up">
+            <i class="fa-solid fa-caret-up"></i>
+          </span>
         </div>
         <div>
-          Presentation <span>753</span>2307
+          <span className="name">Presentation</span>{" "}
+          <span className="acc-count">753</span>
+          <span>2307</span>
+          <span className="arrow-down">
+            <i class="fa-solid fa-caret-down"></i>
+          </span>
         </div>
         <div>
-          Research <span>553</span>9021
+          <span className="name">Research</span>{" "}
+          <span className="acc-count">553</span>
+          <span>9021</span>
+          <span className="arrow-up">
+            <i class="fa-solid fa-caret-up"></i>
+          </span>
         </div>
       </div>
     </div>

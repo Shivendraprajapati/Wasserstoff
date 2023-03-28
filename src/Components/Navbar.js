@@ -1,5 +1,5 @@
 import React from "react";
-import { IoLogoWordpress } from "react-icons/io";
+import logo from "../assets/img/logo.svg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -7,14 +7,14 @@ const Navbar = () => {
     <div className="navbar">
       <div className="logo-name">
         <div className="outer">
-          <IoLogoWordpress size="25" />
+          <img src={logo} alt="" />
         </div>
         <p>WASSERSTOFF</p>
       </div>
       <div className="search-navlist">
         <div className="search-box">
-          <input type="search" name="search" id="search" />
-          <span>
+          <input type="text" name="search" id="search" />
+          <span className="search-icon">
             <i className="fa-solid fa-magnifying-glass"></i>
           </span>
         </div>
@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
       <div className="profile-option">
         <span>
-          <i className="fa-solid fa-user"></i>
+          <i class="fa-regular fa-user"></i>
         </span>
         <span>
           <i className="fa-solid fa-list"></i>
