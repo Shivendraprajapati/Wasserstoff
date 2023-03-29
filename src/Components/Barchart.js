@@ -16,7 +16,7 @@ const Barchart = () => {
       <div className="sales-figer">
         <h3 style={{ color: "#383874", fontWeight: "600", fontSize: "16px" }}>
           <span style={{ fontSize: "12px", fontWeight: "400" }}>
-            Sales Figer
+            Sales Figures
           </span>{" "}
           <br /> <span>$10,430</span>
         </h3>
