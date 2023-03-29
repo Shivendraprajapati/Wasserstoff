@@ -1,5 +1,5 @@
 import React from "react";
-import Distributes from "./Distributes";
+import SidebarData from "./SidebarData";
 import { BiTrendingUp, BiCrown, BiBarChartAlt2 } from "react-icons/bi";
 import ActiveNewUser from "./ActiveNewUser";
 
@@ -12,8 +12,8 @@ const Sidebar = () => {
         </p>
         <p className="total">2,431340</p>
       </div>
-      <div className="distributes">
-        <Distributes
+      <div className="SidebarData">
+        <SidebarData
           title="Total Earning"
           count="540,549"
           bg="#8676FF"
@@ -28,13 +28,13 @@ const Sidebar = () => {
             />
           }
         />
-        <Distributes
+        <SidebarData
           title="Sales"
           count="1,205,677"
           bg="#66C8FF"
           icon={<BiCrown size="25" color="white" />}
         />
-        <Distributes
+        <SidebarData
           title="Purchase"
           count="48,430,039"
           bg="#FF9066"
