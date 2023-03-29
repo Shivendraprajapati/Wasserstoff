@@ -448,10 +448,25 @@ body {
     align-items: center;
     border-radius: 100px;
     font-size: 14px;
+    span {
+      background: transparent;
+      border-radius: 16px;
+      height: 100%;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    span.active,
+    span:hover {
+      background: #3247e6;
+      color: #fff;
+      cursor: pointer;
+    }
   }
   .all-bubles {
     width: 80%;
-    height: 775px;
+    height: 650px;
     margin: 1rem;
     position: relative;
     div {
@@ -469,6 +484,9 @@ body {
       border-radius: 50%;
       background: transparent;
       border: 20px solid rgba(255, 255, 255, 0.3);
+      p {
+        font-size: 12px;
+      }
     }
     .center-div {
       height: 370px;
@@ -493,7 +511,18 @@ body {
       height: 90px;
       width: 90px;
       background: linear-gradient(#ffb84d, #ee7b39);
-      left: 26%;
+      left: 16%;
+      background: radial-gradient(
+            96% 96% at 70.4% 31.2%,
+            #ffb84d 0%,
+            rgba(119, 43, 0, 0) 100%
+          )
+          /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+        #ff8a00;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.13),
+        60px 120px 80px rgba(255, 148, 22, 0.33),
+        inset 0px 4px 30px rgba(255, 255, 255, 0.76),
+        inset 0px -20px 50px rgba(255, 255, 255, 0.53);
     }
 
     .purple {
@@ -501,18 +530,28 @@ body {
       width: 80px;
       background: radial-gradient(#6ae4ff 55%, #4a93ff, #4a4fec);
       position: absolute;
+      background: radial-gradient(
+            96% 96% at 70.4% 31.2%,
+            #6ae4ff 0%,
+            rgba(74, 147, 255, 0) 100%
+          )
+          /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+        #0811e2;
+      box-shadow: inset 0px 2px 10px rgba(255, 255, 255, 0.58),
+        inset 0px -6px 10px rgba(63, 209, 255, 0.67),
+        inset 10px 16px 20px rgba(0, 133, 255, 0.95);
     }
 
     .purple1 {
-      top: 2%;
-      right: 30%;
+      top: -13%;
+      right: 22%;
       height: 70px;
       width: 70px;
     }
 
     .purple2 {
       top: 42%;
-      right: 25%;
+      right: 12%;
     }
 
     .purple3 {
@@ -533,11 +572,24 @@ body {
       height: 100px;
       width: 100px;
       background: radial-gradient(#e3e6ff 5%, #838fff 45%, #030092);
+      background: radial-gradient(
+            96% 96% at 70.4% 31.2%,
+            #838fff 0%,
+            rgba(227, 230, 255, 0) 100%
+          )
+          /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+        #030092;
+      /* 3242222 */
+
+      box-shadow: 0px 40px 80px rgba(35, 0, 248, 0.24),
+        inset 0px 2px 10px rgba(255, 255, 255, 0.58),
+        inset 0px -20px 50px rgba(124, 161, 255, 0.37),
+        inset 10px 16px 20px rgba(210, 165, 255, 0.95);
     }
 
     .blue1 {
-      left: 30%;
-      top: 2%;
+      left: 20%;
+      top: -16%;
     }
 
     .blue2 {
@@ -546,7 +598,7 @@ body {
     }
 
     .blue3 {
-      right: 20%;
+      right: 7%;
       top: 12%;
       height: 90px;
       width: 90px;
@@ -554,14 +606,14 @@ body {
 
     .blue4 {
       left: 30%;
-      bottom: 2%;
+      bottom: -10%;
       height: 70px;
       width: 70px;
     }
 
     .blue5 {
-      right: 10%;
-      bottom: 12%;
+      bottom: 10%;
+      left: 12%;
       height: 50px;
       width: 50px;
     }
@@ -570,22 +622,34 @@ body {
       height: 120px;
       width: 120px;
       background: radial-gradient(#ffe3d3 5%, #d14dd3 65%);
+      background: radial-gradient(
+          96% 96% at 70.4% 31.2%,
+          #ffe3d3 0%,
+          rgba(179, 0, 183, 0) 100%
+        ),
+        #c500f7;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.13),
+        60px 120px 80px rgba(255, 157, 203, 0.33),
+        inset 0px 4px 30px rgba(255, 255, 255, 0.76),
+        inset 0px -20px 50px rgba(255, 255, 255, 0.53),
+        inset 10px 20px 100px #ff8777;
     }
 
     .first {
-      left: 12%;
+      right: -20%;
     }
 
     .second {
-      right: 10%;
+      left: -20%;
     }
 
     .third {
-      top: 5%;
+      top: 20%;
     }
 
     .forth {
-      bottom: 2%;
+      bottom: 16%;
+      right: 10%;
     }
   }
 

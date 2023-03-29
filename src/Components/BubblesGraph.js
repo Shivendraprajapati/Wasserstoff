@@ -10,7 +10,7 @@ const BubblesGraph = () => {
       <div className="time-period">
         <span>1W</span>
         <span>1M</span>
-        <span>3M</span>
+        <span className="active">3M</span>
         <span>1Y</span>
         <span>All</span>
       </div>
