@@ -1,14 +1,14 @@
 import React from "react";
 import Barchart from "./Barchart";
 import Sidebar from "./Sidebar";
-import WorldMap from "./WorldMap";
+import MapDesign from "./MapDesign";
 
 const Home = () => {
   return (
     <div className="content-wrapper home-wrapper">
       <div className="container-wrapper">
         <Sidebar />
-        <WorldMap />
+        <MapDesign />
       </div>
       <Barchart />
     </div>

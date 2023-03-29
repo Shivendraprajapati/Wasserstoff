@@ -44,9 +44,9 @@ const markers = [
 const geoUrl =
   "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json";
 
-const WorldMap = () => {
+const MapDesign = () => {
   return (
-    <div className="worldmap">
+    <div className="MapDesign">
       <ComposableMap data-tip="" style={{ height: "450", width: "100%" }}>
         <ZoomableGroup zoom={1.2}>
           <Geographies geography={geoUrl}>
@@ -87,4 +87,4 @@ const WorldMap = () => {
   );
 };
 
-export default WorldMap;
+export default MapDesign;
