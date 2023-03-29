@@ -3,6 +3,7 @@ import React from "react";
 const BubblesGraph = () => {
   return (
     <div className="bubbles item-center">
+      <p className="timeline">Timeline</p>
       <div className="time-period">
         <span>1W</span>
         <span>1M</span>

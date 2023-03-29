@@ -279,19 +279,28 @@ body {
   }
   .circle-earning {
     margin: 1.5rem 0;
-    padding: 0.5rem;
-    height: 40vh;
+    padding: 0.75rem;
     border-radius: 10px;
-    border: 1px solid lightgray;
+    border: 1px solid #dbdff1;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #fff;
     font-family: "Poppins";
     .circles {
-      height: 86px;
-      width: 86px;
+      height: 120px;
+      width: 120px;
       border-radius: 50%;
-      background: lightgray;
+      background: #dbdff1;
       margin: auto;
+      .outercircle {
+        height: 110px;
+        width: 110px;
+        background: #ffff;
+        border-radius: 50%;
+        .circles {
+          height: 86px;
+          width: 86px;
+        }
+      }
       .innercircle {
         height: 78px;
         width: 78px;
@@ -300,7 +309,7 @@ body {
         .innermostcircle {
           height: 49px;
           width: 49px;
-          background: lightgray;
+          background: #f4f6ff;
           border-radius: 50%;
         }
       }
@@ -310,39 +319,75 @@ body {
       color: #383874;
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 16px;
       align-items: center;
     }
     .updown {
       font-family: "Poppins";
       font-style: normal;
       font-weight: 600;
-      font-size: 15px;
+      font-size: 18px;
       line-height: 25px;
+      .arrow-up {
+        padding-left: 8px;
+        font-weight: 400;
+        font-size: 14px;
+      }
     }
     .compare {
       font-family: "Poppins";
       font-size: 12px;
       line-height: 16px;
       color: #383874;
+      opacity: 0.6;
     }
   }
   .types {
-    height: auto;
-    margin: 0.5rem 0;
+    margin-top: 1rem;
+    color: #383874;
+    .type-name {
+      width: 80px;
+    }
+    .type-count {
+      opacity: 0.6;
+    }
     div {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      align-items: center;
+      justify-content: space-between;
       padding: 0.3rem 0;
       font-size: 14px;
+      text-align: left;
     }
   }
 
   .bg-blue {
     border-radius: 10px;
-    padding: 5px;
+    padding: 15px;
     background: #8676ff;
+    text-align: left;
+    .arrow {
+      padding-left: 8px;
+      display: inline-flex;
+      align-items: flex-end;
+      line-height: 1;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .blue-bottom-border {
+      padding-bottom: 15px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #6b5ed2;
+    }
+    .arrow-up {
+      color: #38f261;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .arrow-down {
+      color: #ff2d2e;
+    }
     div {
       height: 50%;
       padding: 0.3rem;
@@ -366,25 +411,34 @@ body {
     .acc-count {
       color: #9292c1;
     }
-    .arrow-up {
-      color: #00b929;
-    }
-    .arrow-down {
-      color: #ff2d2e;
-    }
     .name {
       width: 120px;
     }
   }
 }
-
+.arrow-up {
+  color: #00b929;
+}
+.arrow-down {
+  color: #ff2d2e;
+}
 .bubbles {
+  width: 100%;
   height: 100%;
-  width: 70%;
+  margin-left: 50px;
   flex-direction: column;
   background: #eef1fa;
   border-radius: 30px;
-
+  padding: 25px;
+  .timeline {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #3d3d60;
+  }
   .time-period {
     height: 5vh;
     width: 300px;
@@ -395,13 +449,11 @@ body {
     align-items: center;
     border-radius: 15px;
   }
-
   .all-bubles {
     width: 80%;
     height: 65vh;
     margin: 1rem;
     position: relative;
-
     div {
       border-radius: 50%;
       position: absolute;
