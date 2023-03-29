@@ -1,9 +1,9 @@
 import React from "react";
 import { RiCopperDiamondLine } from "react-icons/ri";
 
-const DesignFaster = () => {
+const SidebardetailData = () => {
   return (
-    <div className="designfaster">
+    <div className="SidebardetailData">
       <p className="headingDesign">Design Faster</p>
 
       <div className="circle-earning">
@@ -140,4 +140,4 @@ const DesignFaster = () => {
   );
 };
 
-export default DesignFaster;
+export default SidebardetailData;
