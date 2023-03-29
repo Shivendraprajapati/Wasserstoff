@@ -5,7 +5,7 @@ import WorldMap from "./WorldMap";
 
 const Home = () => {
   return (
-    <div className="content-wrapper">
+    <div className="content-wrapper home-wrapper">
       <div className="container-wrapper">
         <Sidebar />
         <WorldMap />

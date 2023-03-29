@@ -4,7 +4,7 @@ import DesignFaster from "./DesignFaster";
 
 const Dashboard = () => {
   return (
-    <div className="content-wrapper">
+    <div className="content-wrapper dashboard-wrapper">
       <div className="container-wrapper">
         <DesignFaster />
         <BubblesGraph />

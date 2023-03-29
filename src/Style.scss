@@ -20,6 +20,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+.tooltip-box {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  gap: 12px;
+  background: #ffffff;
+  border-radius: 16px;
+  color: #383874;
+}
 
 // Navbar style
 .navbar {
@@ -111,8 +120,18 @@ body {
 .content-wrapper {
   overflow-y: auto;
   width: 100%;
-  height: calc(100% - 96px);
+  height: calc(100vh - 96px);
   background-color: #e2e4f0;
+  &.dashboard-wrapper {
+    .container-wrapper {
+      padding-right: 0;
+    }
+  }
+  &.home-wrapper {
+    .container-wrapper {
+      padding-bottom: 50px;
+    }
+  }
 }
 .container-wrapper {
   width: 100%;

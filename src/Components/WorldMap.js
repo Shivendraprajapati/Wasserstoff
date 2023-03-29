@@ -47,7 +47,7 @@ const geoUrl =
 const WorldMap = () => {
   return (
     <div className="worldmap">
-      <ComposableMap data-tip="" style={{ height: "100%", width: "100%" }}>
+      <ComposableMap data-tip="" style={{ height: "450", width: "100%" }}>
         <ZoomableGroup zoom={1.2}>
           <Geographies geography={geoUrl}>
             {({ geographies }) =>
@@ -55,8 +55,8 @@ const WorldMap = () => {
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  fill="gray"
-                  stroke="black"
+                  fill="white"
+                  stroke="gray"
                   strokeWidth={1}
                 />
               ))
@@ -72,6 +72,13 @@ const WorldMap = () => {
               >
                 {name}
               </text>
+              {/* <div className="tooltip-box">
+                <div className="icon-box"></div>
+                <div>
+                  <p>{name}</p>
+                  <h3>12,320,300</h3>
+                </div>
+              </div> */}
             </Marker>
           ))}
         </ZoomableGroup>
