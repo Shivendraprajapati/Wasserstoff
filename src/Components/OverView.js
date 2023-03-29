@@ -4,24 +4,51 @@ import { Modal } from "react-bootstrap";
 import Home from "./Home";
 
 const OverView = () => {
+  const generateData = (baseval, count, yrange) => {
+    var i = 0;
+    var series = [];
+    while (i < count) {
+      var x = Math.floor(Math.random() * (750 - 1 + 1)) + 1;
+      var y =
+        Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+      var z = Math.floor(Math.random() * (75 - 15 + 1)) + 15;
+
+      series.push([x, y, z]);
+      baseval += 86400000;
+      i++;
+    }
+    return series;
+  };
   const [show, setShow] = useState(true);
   const [data, setData] = useState({
     series: [
       {
         name: "Sales",
-        data: [30, 40, 35, 50, 49, 60, 70, 91, 125],
+        data: generateData(new Date("11 Feb 2017 GMT").getTime(), 6, {
+          min: 20,
+          max: 60,
+        }),
       },
       {
         name: "User",
-        data: [30, 10, 35, 40, 49, 70, 91, 125],
+        data: generateData(new Date("11 Feb 2017 GMT").getTime(), 3, {
+          min: 10,
+          max: 60,
+        }),
       },
       {
         name: "Product",
-        data: [30, 40, 35, 50, 49, 70, 91, 10],
+        data: generateData(new Date("11 Feb 2017 GMT").getTime(), 4, {
+          min: 30,
+          max: 60,
+        }),
       },
       {
         name: "Team",
-        data: [30, 40, 35, 50, 49, 60, 70, 91, 30],
+        data: generateData(new Date("11 Feb 2017 GMT").getTime(), 4, {
+          min: 10,
+          max: 60,
+        }),
       },
     ],
     options: {
@@ -40,10 +67,7 @@ const OverView = () => {
       },
       xaxis: {
         tickAmount: 12,
-        type: "datetime",
-        labels: {
-          rotate: 0,
-        },
+        type: "category",
       },
       yaxis: {
         max: 70,

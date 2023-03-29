@@ -9,7 +9,7 @@ const SidebardetailData = () => {
       <div className="circle-earning">
         <div className="circles item-center">
           <div className="outercircle item-center">
-            <div className="circles item-center">
+            <div className="circles inner-bar item-center">
               <div className="innercircle item-center">
                 <div className="innermostcircle item-center">
                   <RiCopperDiamondLine size="30" color="#8676FF" />
@@ -18,7 +18,13 @@ const SidebardetailData = () => {
             </div>
           </div>
         </div>
-        <p>Total earning</p>
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box">
+            <span></span>
+          </div>
+        </div>
+        <p className="total-title">Total earning</p>
         <p className="updown">
           $12,875
           <span className="arrow-up">
