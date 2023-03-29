@@ -1,4 +1,7 @@
 import React from "react";
+import Diamond from "../assets/img/diamond.svg";
+import Eye from "../assets/img/eye.svg";
+import Chart from "../assets/img/chart.svg";
 
 const BubblesGraph = () => {
   return (
@@ -12,30 +15,33 @@ const BubblesGraph = () => {
         <span>All</span>
       </div>
       <div className="all-bubles item-center">
-        <div className="pink first">
-          <p>Investment</p>
-          <p className="updown">$12,875</p>
-        </div>
-        <div className="pink second"></div>
-        <div className="center-div item-center">
-          <div className="innermost">
+        <div className="outer-center-circle">
+          <div className="pink first">
             <p>Investment</p>
             <p className="updown">$12,875</p>
           </div>
+          <div className="pink second"></div>
+          <div className="center-div item-center">
+            <div className="innermost">
+              <p>Investment</p>
+              <p className="updown">$12,875</p>
+            </div>
+          </div>
+          <div className="yellow"></div>
+          <div className="purple purple1"></div>
+          <div className="purple purple2"></div>
+          <div className="purple purple3"></div>
+          <div className="purple purple4"></div>
+
+          <div className="blue blue1"></div>
+          <div className="blue blue2"></div>
+          <div className="blue blue3">
+            <p>Investment</p>
+            <p className="updown">$12,875</p>
+          </div>
+          <div className="blue blue4"></div>
+          <div className="blue blue5"></div>
         </div>
-        <div className="yellow"></div>
-        <div className="purple purple1"></div>
-        <div className="purple purple2"></div>
-        <div className="purple purple3"></div>
-        <div className="purple purple4"></div>
-        <div className="blue blue1"></div>
-        <div className="blue blue2"></div>
-        <div className="blue blue3">
-          <p>Investment</p>
-          <p className="updown">$12,875</p>
-        </div>
-        <div className="blue blue4"></div>
-        <div className="blue blue5"></div>
         <div className="pink third">
           <p>Investment</p>
           <p className="updown">$12,875</p>
@@ -47,18 +53,24 @@ const BubblesGraph = () => {
       </div>
       <div className="data">
         <div>
+          <div className="white-box">
+            <img src={Diamond} alt="Diamond" />
+          </div>
           <span className="title">TREND GOOD</span>
-          <br />
           <span>204</span>
         </div>
         <div>
+          <div className="white-box">
+            <img src={Eye} alt="Eye" />
+          </div>
           <span className="title">SHOPPING VIEWS</span>
-          <br />
           <span>65,540</span>
         </div>
         <div>
+          <div className="white-box">
+            <img src={Chart} alt="Chart" />
+          </div>
           <span className="title">STORE DYNAMICS</span>
-          <br />
           <span>324</span>
         </div>
       </div>
