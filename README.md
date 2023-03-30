@@ -32,7 +32,7 @@ React Js
 https://euphonious-faun-de75d7.netlify.app
 
 ## Video link...
-[![IMAGE ALT TEXT HERE](http://https://www.youtube.com/watch?v=VCC3Y7FGleY/0.jpg)]
+[![IMAGE ALT TEXT HERE]([(https://www.youtube.com/watch?v=VCC3Y7FGleY)]
 (https://www.youtube.com/watch?v=VCC3Y7FGleY)
 
 ## GitHub Link...
