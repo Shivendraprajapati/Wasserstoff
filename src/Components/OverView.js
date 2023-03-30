@@ -20,7 +20,7 @@ const OverView = () => {
     return series;
   };
   const [show, setShow] = useState(true);
-  const [data, setData] = useState({
+  const [data] = useState({
     series: [
       {
         name: "Sales",

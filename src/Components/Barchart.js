@@ -11,6 +11,16 @@ const Barchart = () => {
     { value: 25 },
     { value: 8 },
   ];
+  const data1 = [
+    { value: 20 },
+    { value: 30 },
+    { value: 10 },
+    { value: 14 },
+    { value: 18 },
+    { value: 17 },
+    { value: 10 },
+    { value: 18 },
+  ];
   return (
     <div className="barchart">
       <div className="sales-figer">
@@ -36,7 +46,7 @@ const Barchart = () => {
         </h3>
       </div>
       <div className="graph" style={{ display: "flex" }}>
-        <BarChart width={150} height={45} data={data}>
+        <BarChart width={150} height={45} data={data1}>
           <Bar dataKey="value" fill="#dbdff1" />
         </BarChart>
         <BarChart width={150} height={45} data={data}>
