@@ -32,8 +32,8 @@ React Js
 https://euphonious-faun-de75d7.netlify.app
 
 ## Video link...
-[![IMAGE HERE](https://www.youtube.com/watch?v=VCC3Y7FGleY)]
-(https://www.youtube.com/watch?v=VCC3Y7FGleY)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/VCC3Y7FGleY/0.jpg)](http://www.youtube.com/watch?v=VCC3Y7FGleY)
+
 
 ## GitHub Link...
 https://github.com/Shivendraprajapati/Wasserstoff
