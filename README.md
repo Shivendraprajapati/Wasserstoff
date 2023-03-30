@@ -5,7 +5,8 @@ WASSERSTOFF ASSIGNMENT
 React Js
 
 ## Libraries...
-"apexcharts": "^3.37.2",
+
+    "apexcharts": "^3.37.2",
     "bootstrap": "^5.2.3",
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
@@ -19,6 +20,11 @@ React Js
     "recharts": "^2.4.3",
 
 ## Approach...
-First create a folder and then run a command in terminal "npx crearte-react-app" then I broke project into a small component and firstly I made Navbar, Footer, and sidebar after that I came to the MapDesign, Bar chart and Bubble chart for that i used react libraries which was mentioned above 
-for navigetion I used "react-dom-router librery", for map I used "react-simple-map" library, and for charts I used "recharts" library for styling I used SASS 
+
+1. Create a folder and inside them usingcommand create-react-app and named project name.
+2. Install 'node-sass' for designing my component.
+3. Install all the library and dependencies which are required in this project.
+
+ I broke project into a small component and firstly I made Navbar, Footer, and sidebar after that I came to the MapDesign, Bar chart and Bubble chart for that I used react libraries which was mentioned above for navigetion I used "react-dom-router librery", for map I used "react-simple-map" library, and for charts I used "recharts" library for styling I used SASS for styling UI.
+
 
