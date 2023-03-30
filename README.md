@@ -27,5 +27,6 @@ React Js
 
  After reading through the entire figma thoroughly I broke project into a small component and firstly I made Navbar, Footer, and sidebar after that I came to the MapDesign, Bar chart and Bubble chart for that I used react libraries which was mentioned above for navigetion I used "react-router-dom" library, for map I used "react-simple-map" library, and for barcharts I used "recharts" library for styling I used SASS. I faced challenges in making mapdesign compounents, bubblegraphs components, and barcharts components.
 
-##Hosted Link...
+Hosted Link...
+
   https://euphonious-faun-de75d7.netlify.app
