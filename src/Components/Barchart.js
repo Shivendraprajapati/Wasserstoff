@@ -3,13 +3,13 @@ import { BarChart, Bar } from "recharts";
 const Barchart = () => {
   const data = [
     { value: 10 },
-    { value: 12 },
+    { value: 22 },
     { value: 13 },
     { value: 14 },
     { value: 10 },
     { value: 17 },
     { value: 25 },
-    { value: 18 },
+    { value: 8 },
   ];
   return (
     <div className="barchart">
